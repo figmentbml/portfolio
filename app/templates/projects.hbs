@@ -1,0 +1,35 @@
+<section class="header">
+  <h2>Projects</h2>
+</section>
+
+<section class="projects">
+  {{#each project in model}}
+    <div class="project">
+      <div class="title">
+        <strong><h3>{{project.name}}</h3></strong>
+        <!-- <a href="http://www.google.com">Google</a>
+        <a href={{project.url}}>Production</a> -->
+        <p>{{project.url}}</p>
+        <p>{{project.github}}</p>
+      </div>
+      <div class="description">
+        <p>
+          <strong>
+            Description:
+          </strong>
+        </p>
+        {{project.description}}
+        <p>
+          <strong>
+            Skills learned:
+          </strong>
+        </p>
+        <ul>
+          {{#each project.skills}}
+          <li>{{.}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  {{/each}}
+</section>
