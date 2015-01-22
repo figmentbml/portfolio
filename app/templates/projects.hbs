@@ -6,9 +6,8 @@
   {{#each project in model}}
     <div class="project">
       <div class="title">
-        <strong><h3>{{project.name}}</h3></strong>
-        <p>{{project.url}}</p>
-        <p>{{project.github}}</p>
+        <a {{bind-attr href=project.url}}> <strong><h3>{{project.name}}</h3></strong></a>
+        <a {{bind-attr href=project.github}}><p>GitHub</p></a>
       </div>
       <div class="description">
         <p>

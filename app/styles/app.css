@@ -21,11 +21,23 @@ header {
 }
 
 .container {
-  padding: 1em;
+  padding: 0 1em 1em 1em;
 }
 
 body {
-  background-color: rgba(252,223,21, 0.5);
+  background-color: rgba(252,223,21, 1);
+}
+
+div.links {
+  background-color: rgba(255,255,255, 1);
+  padding: 10px;
+  text-align: center;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+.links>a {
+  display: inline-block;
+  width: 20%;
 }
 
 main {
@@ -34,7 +46,7 @@ main {
 
 h2 {
   font-family: Georgia, Times, 'Times New Roman', serif;
-  color: rgba(60,60,60, 1);
+  color: rgba(11,153,188, 1);
 }
 
 p {
@@ -53,10 +65,18 @@ footer {
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 30px;
   padding-bottom: 5px;
+  font-family: Georgia, Times, 'Times New Roman', serif;
 }
 
 section.header {
   border-bottom: 1px solid rgba(212,14,82, 1);
+}
+section.header>h2 {
+  color: rgba(60,60,60, 1);
+}
+
+.resume strong {
+  color: rgba(60,60,60, 1);
 }
 
 .project {
@@ -77,4 +97,22 @@ section.header {
   padding: 15px;
   width: 70%;
   float: left;
+}
+
+div.column1 {
+  width: 30%;
+  float: left;
+  padding-right: 15px;
+}
+
+div.column2 {
+  border-left: rgba(212,14,82, 1) 1px solid;
+  width: 70%;
+  float: left;
+  padding-left: 15px;
+}
+
+.resume {
+  clear: both;
+  overflow: hidden;
 }

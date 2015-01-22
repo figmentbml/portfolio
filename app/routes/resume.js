@@ -6,15 +6,15 @@ export default Ember.Route.extend({
     return [
     {
       employer: "Cupcake",
-      title: "Cupcake ipsum dolor sit amet biscuit carrot cake bear claw ice cream. Oat cake ice cream marshmallow jelly beans donut fruitcake cake sweet. Powder marzipan biscuit pudding. Topping biscuit fruitcake. Croissant chocolate tart jelly ice cream dragée. Caramels pie macaroon jelly-o wafer.",
+      title: "Jelly-o wafer.",
       dates: "www.google.com",
-      description: "www.github",
+      description: "Sweet marshmallow pie bear claw dragée. Pastry cake chocolate gingerbread fruitcake. Chupa chups muffin croissant jelly beans.",
     },
     {
       employer: "Cupcake",
-      title: "Cupcake ipsum dolor sit amet biscuit carrot cake bear claw ice cream. Oat cake ice cream marshmallow jelly beans donut fruitcake cake sweet. Powder marzipan biscuit pudding. Topping biscuit fruitcake. Croissant chocolate tart jelly ice cream dragée. Caramels pie macaroon jelly-o wafer.",
+      title: "Jelly-o wafer.",
       dates: "www.google.com",
-      description: "www.github",
+      description: "Sweet marshmallow pie bear claw dragée. Pastry cake chocolate gingerbread fruitcake. Chupa chups muffin croissant jelly beans.",
     },
     ];
   }

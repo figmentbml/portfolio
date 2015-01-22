@@ -1,18 +1,57 @@
-<h2>Resume</h2>
+<div class="resume">
+  <div class="column1">
+    <section class="contact">
+      <h2>Contact</h2>
+      <p>
+        Croissant halvah cookie gummi bears.
+      </p>
+      <p>
+        Tootsie roll topping tart cotton candy pastry sweet roll fruitcake.
+      </p>
+    </section>
+    <section class="summary">
+      <h2>Summary</h2>
+      <p>
+        Sugar plum sugar plum gummi bears pastry candy. Chocolate jujubes cotton candy biscuit donut croissant brownie bear claw. Fruitcake ice cream icing brownie topping lollipop sesame snaps lemon drops ice cream. Marshmallow cotton candy marzipan apple pie chocolate bar chocolate cake candy danish. Oat cake biscuit sweet roll sugar plum. Chupa chups sweet donut jelly chocolate chocolate bar icing. Jujubes candy chocolate cake. Sweet sugar plum jelly lollipop biscuit sweet roll chocolate bar unerdwear.com. Ice cream liquorice ice cream chupa chups marzipan.
+      </p>
+    </section>
+  </div>
 
-<section>
-  <table>
-    <thead>
-      <td>
-        Job
-      </td>
-    </thead>
-    <tbody>
-      <tr>
-        <td>
-          My job
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</section>
+  <div class="column2">
+    <section class="resume_projects">
+      <h2>Projects and Experience</h2>
+      <p>
+        Croissant halvah cookie gummi bears.
+      </p>
+      <p>
+        Tootsie roll topping tart cotton candy pastry sweet roll fruitcake.
+      </p>
+    </section>
+
+    <section class="school">
+      <h2>Education</h2>
+      <p>
+        <strong>gSchool</strong>
+      </p>
+      <p>
+        Macaroon gingerbread brownie wafer liquorice
+      </p>
+      <p>
+        <strong>James Madison University</strong>
+      </p>
+      <p>
+        Pie sweet cake chocolate cake ice cream topping
+      </p>
+    </section>
+
+    <section class="jobs">
+      <h2>Employment</h2>
+      {{#each resume in model}}
+      <p>{{resume.employer}}</p>
+      <strong>{{resume.title}}</strong>
+      <p>{{resume.dates}}</p>
+      <p>{{resume.description}}</p>
+      {{/each}}
+    </section>
+  </div>
+</div>

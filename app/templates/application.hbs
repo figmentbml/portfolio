@@ -3,15 +3,20 @@
 </header>
 
 <main>
+  <div class="links">
+    {{#link-to 'index'}}Home{{/link-to}}
+    {{#link-to 'projects'}}Projects{{/link-to}}
+    {{#link-to 'resume'}}Resume{{/link-to}}
+  </div>
   <div class="container">
     {{outlet}}
   </div>
 </main>
 
 <footer>
-  <p>
-    {{#link-to 'index'}}Index{{/link-to}}
+  <div class="links">
+    {{#link-to 'index'}}Home{{/link-to}}
     {{#link-to 'projects'}}Projects{{/link-to}}
     {{#link-to 'resume'}}Resume{{/link-to}}
-  </p>
+  </div>
 </footer>
