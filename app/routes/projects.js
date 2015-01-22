@@ -10,7 +10,7 @@ export default Ember.Route.extend({
         description: "A Rails app that has some of the same functionality as Basecamp.",
         url: "http://stormy-cove-1200.herokuapp.com/",
         github: "https://github.com/figmentbml/gCamp",
-        skills: ["Ruby", "Rails", "Rspec", "Capybara"],
+        skills: ["Ruby", "Rails", "Join Tables", "User Authorization", "Rspec", "Capybara"],
       },
       {
         id: "2",
@@ -18,7 +18,7 @@ export default Ember.Route.extend({
         description: "Personal Project",
         url: "http://www.wine-tracker.co/",
         github: "https://github.com/figmentbml/wine-tracker",
-        skills: ["Rake Tasks", "Scraping Sites", "Yelp API", "Carrierwave & Fog"],
+        skills: ["Rake Tasks", "Scraping Sites", "Yelp API", "Carrierwave & Fog", "Forms"],
       },
       {
         id: "3",

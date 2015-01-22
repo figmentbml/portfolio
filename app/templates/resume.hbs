@@ -3,14 +3,23 @@
     <section class="contact">
       <h2>Contact</h2>
       <p>
-        Croissant halvah cookie gummi bears.
+        LinkedIn
       </p>
       <p>
-        Tootsie roll topping tart cotton candy pastry sweet roll fruitcake.
+        Github
+      </p>
+      <p>
+        Twitter @figmentbml
+      </p>
+      <p>
+        medium.com/@figmentbml
+      </p>
+      <p>
+        beth.jaswa@gmail.com
       </p>
     </section>
     <section class="summary">
-      <h2>Summary</h2>
+      <h2>Objective</h2>
       <p>
         Sugar plum sugar plum gummi bears pastry candy. Chocolate jujubes cotton candy biscuit donut croissant brownie bear claw. Fruitcake ice cream icing brownie topping lollipop sesame snaps lemon drops ice cream. Marshmallow cotton candy marzipan apple pie chocolate bar chocolate cake candy danish. Oat cake biscuit sweet roll sugar plum. Chupa chups sweet donut jelly chocolate chocolate bar icing. Jujubes candy chocolate cake. Sweet sugar plum jelly lollipop biscuit sweet roll chocolate bar unerdwear.com. Ice cream liquorice ice cream chupa chups marzipan.
       </p>
@@ -34,23 +43,40 @@
         <strong>gSchool</strong>
       </p>
       <p>
-        Macaroon gingerbread brownie wafer liquorice
+        Full Stack Developer Program
+      </p>
+      <p>
+        Focusing on Ruby on Rails, JavaScript, Ember.js, HTML, and CSS
       </p>
       <p>
         <strong>James Madison University</strong>
       </p>
       <p>
-        Pie sweet cake chocolate cake ice cream topping
+        Bachelor of Business Administration
+      </p>
+      <p>
+        Hospitality and Tourism Management, Event Planning
       </p>
     </section>
 
     <section class="jobs">
       <h2>Employment</h2>
       {{#each resume in model}}
-      <p>{{resume.employer}}</p>
-      <strong>{{resume.title}}</strong>
-      <p>{{resume.dates}}</p>
-      <p>{{resume.description}}</p>
+      <div class="job">
+        <div>
+          <p class="job-title"><strong>{{resume.title}}</strong></p>
+          <p class="employer">{{resume.employer}}</p>
+        </div>
+        <div>
+          <p class="date">{{resume.dates}}</p>
+          <p class="location">{{resume.location}}</p>
+        </div>
+          <ul>
+            {{#each resume.description}}
+              <li>{{.}}</li>
+            {{/each}}
+          </ul>
+        </div>
       {{/each}}
     </section>
   </div>
