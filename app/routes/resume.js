@@ -19,8 +19,7 @@ export default Ember.Route.extend({
       "Input all bills and manage service contracts from multiple vendors",
       "Plan and execute events ranging from MicroKitchen Fair, Annual Farm to Plate, weekly happy hours, and other catering opportunities as needed",
       "Coordinate CSA sign ups and distribute shares for office CSA programs"
-      ]
-      ,
+      ],
     },
     {
       employer: "Guckenheimer",
