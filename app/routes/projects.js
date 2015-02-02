@@ -12,6 +12,11 @@ export default Ember.Route.extend({
         github: "https://github.com/figmentbml/wine-tracker",
         skills: ["Ruby on Rails", "Gems: Yelp API, Carrierwave, Fog, Nokogiri", "Rake Tasks", "Scraping Sites", "Forms", "User Authorization", "Bootstrap", "Associations", "Controller Specs"],
         image: "/assets/Screen Shot wine tracker.png",
+        medium: "http://medium.com/gschool-chronicles/introducing-colorado-wine-tracker-a2006ad18171",
+        climate: "https://codeclimate.com/github/figmentbml/wine-tracker",
+        climateBadge: "https://codeclimate.com/github/figmentbml/wine-tracker/badges/gpa.svg",
+        travisCI: "https://travis-ci.org/figmentbml/wine-tracker",
+        travisCIbadge: "https://travis-ci.org/figmentbml/wine-tracker.svg?branch=master",
       },
       {
         id: "2",
@@ -21,6 +26,11 @@ export default Ember.Route.extend({
         github: "https://github.com/figmentbml/gCamp",
         skills: ["Ruby on Rails", "Join Tables", "User Authorization", "Rspec", "Capybara"],
         image: "/assets/Screen Shot gcamp.png",
+        medium: "",
+        climate: "https://codeclimate.com/github/figmentbml/gCamp",
+        climateBadge: "https://codeclimate.com/github/figmentbml/gCamp/badges/gpa.svg",
+        travisCI: "https://travis-ci.org/figmentbml/gCamp",
+        travisCIbadge: "https://travis-ci.org/figmentbml/gCamp.svg?branch=master",
       },
       {
         id: "3",
@@ -30,6 +40,11 @@ export default Ember.Route.extend({
         github: "https://github.com/figmentbml/listen",
         skills: ["JavaScript click events", "jQuery", "HTML audio tags"],
         image: "",
+        medium: "",
+        climate: "",
+        climateBadge: "",
+        travisCI: "",
+        travisCIbadge: "",
       },
 
       ];

@@ -7,7 +7,16 @@
     <div class="project">
       <div class="title">
         <a {{bind-attr href=project.url}}> <strong><h3>{{project.name}}</h3></strong></a>
-        <a {{bind-attr href=project.github}}><p>GitHub</p></a>
+        <a {{bind-attr href=project.github}}><img src="/assets/GitHub.png" class="project-badge"/></a>
+        {{#if project.climate}}
+          <a {{bind-attr href=project.climate}}><img {{bind-attr src=project.climateBadge}} class="climate-badge"/></a>
+        {{/if}}
+        {{#if project.travisCI}}
+          <a {{bind-attr href=project.travisCI}}><img {{bind-attr src=project.travisCIbadge}} class="travis-badge"/></a>
+        {{/if}}
+        {{#if project.medium}}
+        <a {{bind-attr href=project.medium}}><img src="/assets/medium-logo.png" class="project-badge"/></a>
+        {{/if}}
         <img {{bind-attr src=project.image}}/>
       </div>
       <div class="description">

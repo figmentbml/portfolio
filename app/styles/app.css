@@ -141,6 +141,17 @@ h1 {
   text-shadow: 3px 2px 3px #000;
 }
 section.contact > p > img {
-  width: 8%;
+  width: 6%;
   margin: 0 auto;
+}
+section.projects img.project-badge {
+  width: 6%;
+}
+
+section.projects img.climate-badge {
+  width: 30%;
+}
+
+section.projects img.travis-badge {
+  width: 25%;
 }
