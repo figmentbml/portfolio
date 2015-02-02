@@ -140,7 +140,7 @@ main.intro {
 h1 {
   text-shadow: 3px 2px 3px #000;
 }
-section.contact > p > img {
+section.contact > img {
   width: 6%;
   margin: 0 auto;
 }

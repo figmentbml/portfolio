@@ -7,7 +7,7 @@ export default Ember.Route.extend({
       {
         id: "1",
         name: "Colorado Wine Tracker",
-        description: "This app provides information Colorado Wineries and their wine. It also keeps track of your tasting notes so you can remember if you liked that wine or not.",
+        description: "This app provides information about Colorado Wineries and their wine. It also keeps track of your tasting notes so you can remember if you liked that wine or not.",
         url: "http://www.wine-tracker.co/",
         github: "https://github.com/figmentbml/wine-tracker",
         skills: ["Ruby on Rails", "Gems: Yelp API, Carrierwave, Fog, Nokogiri", "Rake Tasks", "Scraping Sites", "Forms", "User Authorization", "Bootstrap", "Associations", "Controller Specs"],
