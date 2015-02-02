@@ -1,5 +1,5 @@
 <section class="header">
-  <h2>Projects</h2>
+  <h2>Projects & Skills</h2>
 </section>
 
 <section class="projects">
@@ -8,6 +8,7 @@
       <div class="title">
         <a {{bind-attr href=project.url}}> <strong><h3>{{project.name}}</h3></strong></a>
         <a {{bind-attr href=project.github}}><p>GitHub</p></a>
+        <img {{bind-attr src=project.image}}/>
       </div>
       <div class="description">
         <p>

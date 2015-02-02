@@ -1,7 +1,6 @@
 <div class="resume">
   <div class="column1">
     <section class="contact">
-      <h2>Contact</h2>
       <p>
         <a href="https://www.linkedin.com/ln/bethjaswa/">bethjaswa</a>
         <img src="/assets/linked_in.png"/>
@@ -22,22 +21,45 @@
       </p>
     </section>
     <section class="summary">
-      <h2>Objective</h2>
+      <h2>Summary</h2>
       <p>
-        Sugar plum sugar plum gummi bears pastry candy. Chocolate jujubes cotton candy biscuit donut croissant brownie bear claw. Fruitcake ice cream icing brownie topping lollipop sesame snaps lemon drops ice cream. Marshmallow cotton candy marzipan apple pie chocolate bar chocolate cake candy danish. Oat cake biscuit sweet roll sugar plum. Chupa chups sweet donut jelly chocolate chocolate bar icing. Jujubes candy chocolate cake. Sweet sugar plum jelly lollipop biscuit sweet roll chocolate bar unerdwear.com. Ice cream liquorice ice cream chupa chups marzipan.
+        I worked in hotels and corporate catering in my pre-web dev life. I was fortunate to get a real feel for the industry by working with engineers and developers every day at my previous job. The tools in my work toolbelt were always changing and updating, so I became accustomed to learning the newest thing on the scene. I also became frustrated when I couldn't solve a tech problem despite having all of these developers and engineers around.
+      </p>
+      <p>
+        I started to flirt with the notion of attempting to create something myself and in a lot of ways I did. I solved my problems using the technology available and it was completely rewarding each time. After some thought, I decided to expand my knowledge, actually learn to code, and change careers.
       </p>
     </section>
   </div>
 
   <div class="column2">
     <section class="resume_projects">
-      <h2>Projects and Experience</h2>
-      <p>
-        Croissant halvah cookie gummi bears.
-      </p>
-      <p>
-        Tootsie roll topping tart cotton candy pastry sweet roll fruitcake.
-      </p>
+      {{#link-to 'projects'}}<h2>Projects and Skills</h2>{{/link-to}}
+      {{#each project in projects}}
+      <div class="project">
+        <div class="title">
+          <a {{bind-attr href=project.url}}> <strong><h3>{{project.name}}</h3></strong></a>
+          <a {{bind-attr href=project.github}}><p>GitHub</p></a>
+        </div>
+        <div class="description">
+          <p>
+            <strong>
+              Description:
+            </strong>
+          </p>
+          {{project.description}}
+          <p>
+            <strong>
+              Skills learned:
+            </strong>
+          </p>
+          <ul>
+            {{#each project.skills}}
+            <li>{{.}}</li>
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+      {{/each}}
     </section>
 
     <section class="school">
@@ -49,7 +71,7 @@
         Full Stack Developer Program
       </p>
       <p>
-        Focusing on Ruby on Rails, JavaScript, Ember.js, HTML, and CSS
+        Focusing on Ruby on Rails, HTML, CSS, Ember.js, and JavaScript
       </p>
       <p>
         <strong>James Madison University</strong>
