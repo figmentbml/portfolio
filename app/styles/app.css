@@ -130,3 +130,12 @@ main.intro {
   overflow: hidden;
   padding-left: 5px;
 }
+
+h1 {
+  text-shadow: 3px 2px 3px #000;
+}
+section.contact > p > img {
+  width: 8%;
+  margin: 0 auto;
+
+}
