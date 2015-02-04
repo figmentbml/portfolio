@@ -140,8 +140,8 @@ main.intro {
 h1 {
   text-shadow: 3px 2px 3px #000;
 }
-section.contact > img {
-  width: 6%;
+section.contact > a > img {
+  width: 30px;
   margin: 0 auto;
 }
 section.projects img.project-badge {
