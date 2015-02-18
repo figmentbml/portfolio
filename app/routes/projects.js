@@ -49,10 +49,10 @@ export default Ember.Route.extend({
       {
         id: "3",
         name: "Ember Blog",
-        description: "Basic blog with Ember front end powered by a Rails API. Features include full CRUD of posts and currently just showing comments and users.",
-        url: "http://jaswa-blog.herokuapp.com/posts",
+        description: "Basic blog with Ember front end powered by a Rails API. Features include posts, comments, and users.",
+        url: "http://jaswa-blog.herokuapp.com/",
         github: "https://github.com/figmentbml/blog-client",
-        skills: ["Ember.js", "Handlebars.js", "Rails API", "Ember Associations", "Search Posts", "Flash Messages", "all custom CSS & HTML"],
+        skills: ["Ember.js", "Handlebars.js", "Rails API", "Ember Associations", "Collection Select", "Search Posts", "Flash Messages", "all custom CSS & HTML"],
         image: "/assets/Screen Shot blog.png",
         medium: "",
         climate: "https://codeclimate.com/github/figmentbml/blog-client",
