@@ -54,7 +54,7 @@ export default Ember.Route.extend({
         github: "https://github.com/figmentbml/blog-client",
         skills: ["Ember.js", "Handlebars.js", "Rails API", "Ember Associations", "Collection Select", "Search Posts", "Flash Messages", "all custom CSS & HTML"],
         image: "/assets/Screen Shot blog.png",
-        medium: "",
+        medium: "https://medium.com/gschool-chronicles/search-bar-madness-27f98e1d0654",
         climate: "https://codeclimate.com/github/figmentbml/blog-client",
         climateBadge: "https://codeclimate.com/github/figmentbml/blog-client/badges/gpa.svg",
         travisCI: "",
