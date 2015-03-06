@@ -79,7 +79,7 @@ export default Ember.Route.extend({
       {
         id: "5",
         name: "Angular Blog",
-        description: "Uses same Rails API as the Ember Blog",
+        description: "First Angular app that uses same Rails API as the Ember Blog",
         url: "",
         github: "https://github.com/figmentbml/blog-angular",
         skills: ["AngularJS"],
