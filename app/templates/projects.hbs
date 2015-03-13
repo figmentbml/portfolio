@@ -11,16 +11,30 @@
         {{else}}
           <strong><h3>{{project.name}}</h3></strong>
         {{/if}}
-        <a {{bind-attr href=project.github}}><img src="/assets/GitHub.png" class="project-badge"/></a>
-        {{#if project.climate}}
-          <a {{bind-attr href=project.climate}}><img {{bind-attr src=project.climateBadge}} class="climate-badge"/></a>
-        {{/if}}
-        {{#if project.travisCI}}
-          <a {{bind-attr href=project.travisCI}}><img {{bind-attr src=project.travisCIbadge}} class="travis-badge"/></a>
-        {{/if}}
-        {{#if project.medium}}
-        <a {{bind-attr href=project.medium}}><img src="/assets/medium-logo.png" class="project-badge"/></a>
-        {{/if}}
+        <div class="project-col1">
+          <div class="project-item">
+            <a {{bind-attr href=project.github}}><img src="/assets/GitHub.png" class="project-badge"/></a>
+            <a {{bind-attr href=project.github}}>GitHub Repo</a>
+          </div>
+          {{#if project.medium}}
+          <div class="project-item">
+            <a {{bind-attr href=project.medium}}><img src="/assets/medium-logo.png" class="project-badge"/></a>
+            <a {{bind-attr href=project.medium}}>Blog Post</a>
+          </div>
+          {{/if}}
+        </div>
+        <div class="project-col2">
+          {{#if project.climate}}
+            <div class="project-item">
+              <a {{bind-attr href=project.climate}}><img {{bind-attr src=project.climateBadge}} class="climate-badge"/></a>
+            </div>
+          {{/if}}
+          {{#if project.travisCI}}
+          <div class="project-item">
+            <a {{bind-attr href=project.travisCI}}><img {{bind-attr src=project.travisCIbadge}} class="travis-badge"/></a>
+          </div>
+          {{/if}}
+        </div>
         <img {{bind-attr src=project.image}}/>
       </div>
       <div class="description">

@@ -112,6 +112,7 @@ div.column2 {
 .resume {
   clear: both;
   overflow: hidden;
+  padding-top: 28px;
 }
 
 .job div {
@@ -145,13 +146,23 @@ section.contact > a > img {
   margin: 0 auto;
 }
 section.projects img.project-badge {
-  width: 6%;
+  width: 10%;
 }
 
 section.projects img.climate-badge {
-  width: 30%;
+  width: 60%;
 }
 
 section.projects img.travis-badge {
-  width: 25%;
+  width: 50%;
+}
+
+.project-item {
+  width: 50%;
+  float: left;
+  padding-bottom: 1%;
+}
+.project-col1, .project-col2 {
+  clear: both;
+  overflow: hidden;
 }
