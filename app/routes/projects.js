@@ -33,6 +33,20 @@ export default Ember.Route.extend({
         travisCIbadge: "https://travis-ci.org/figmentbml/gCamp.svg?branch=master",
       },
       {
+        id: "3",
+        name: "Rantly",
+        description: "Rantly is an app with Ember on the front end and Rails on the backend. It requires users to make rants that are at least 144 characters long and has client/server user auth.  API repo - https://github.com/figmentbml/rantly-api",
+        url: "http://jaswa-rantly.herokuapp.com/",
+        github: "https://github.com/figmentbml/rantly-ember",
+        skills: ["Ember.js", "Client/Server User Auth by Hand", "Rails API", "Custom Validation Messages on Ember", "Custom Validation Messages on Ember", "Inline Editing"],
+        image: "/assets/Screen Shot rantly.png",
+        medium: "",
+        climate: "https://codeclimate.com/github/figmentbml/ember-rantly",
+        climateBadge: "https://codeclimate.com/github/figmentbml/rantly-ember/badges/gpa.svg",
+        travisCI: "",
+        travisCIbadge: "",
+      },
+      {
         id: "4",
         name: "This Portfolio",
         description: "First Ember app containing more information about me, information about my projects, and my resume. It was also my first web app using Handlebars.js.",
@@ -47,7 +61,7 @@ export default Ember.Route.extend({
         travisCIbadge: "",
       },
       {
-        id: "3",
+        id: "5",
         name: "Ember Blog",
         description: "Basic blog with Ember front end powered by a Rails API. Features include posts, comments, and users.",
         url: "http://jaswa-blog.herokuapp.com/",
@@ -62,7 +76,7 @@ export default Ember.Route.extend({
       },
 
       {
-        id: "4",
+        id: "6",
         name: "Rails Blog API",
         description: "Rails API for a blog with posts, comments, and users returning different JSON depending on if it's hit from Ember or Angular.",
         url: "",
@@ -77,7 +91,7 @@ export default Ember.Route.extend({
       },
 
       {
-        id: "5",
+        id: "7",
         name: "Angular Blog",
         description: "First Angular app that uses same Rails API as the Ember Blog",
         url: "",
