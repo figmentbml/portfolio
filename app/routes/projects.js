@@ -38,7 +38,7 @@ export default Ember.Route.extend({
         description: "Rantly is an app with Ember on the front end and Rails on the backend. It requires users to make rants that are at least 144 characters long and has client/server user auth.  API repo - https://github.com/figmentbml/rantly-api",
         url: "http://jaswa-rantly.herokuapp.com/",
         github: "https://github.com/figmentbml/rantly-ember",
-        skills: ["Ember.js", "Client/Server User Auth by Hand", "Rails API", "Custom Validation Messages on Ember", "Custom Validation Messages on Ember", "Inline Editing"],
+        skills: ["Ember.js", "Client/Server User Auth by Hand", "Rails API", "Custom Validation Messages on Ember", "Gravatar API", "Inline Editing"],
         image: "/assets/Screen Shot rantly.png",
         medium: "",
         climate: "https://codeclimate.com/github/figmentbml/ember-rantly",
