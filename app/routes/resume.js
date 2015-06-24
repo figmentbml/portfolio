@@ -5,6 +5,19 @@ export default Ember.Route.extend({
   model: function () {
     return [
     {
+      employer: "TheIndustree",
+      title: "Junior Software Developer",
+      dates: "April 2015 to current",
+      location: "Longmont, CO",
+      description: [
+      "Build a greenfield, native iOS app in Swift",
+      "Integrate with social media, such as login with Facebook",
+      "Update Express Node.js API",
+      "Work with Neo4j relational graph database",
+      "Learn new skills to accomplish tasks"
+      ],
+    },
+    {
       employer: "Guckenheimer",
       title: "Food Service Manager",
       dates: "Feb 2012 to Sep 2014",
