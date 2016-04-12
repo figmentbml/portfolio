@@ -40,17 +40,13 @@
         <img {{bind-attr src=project.image}}/>
       </div>
       <div class="description">
-        <p>
-          <strong>
-            Description:
-          </strong>
-        </p>
-        {{project.description}}
-        <p>
-          <strong>
-            Related Skills:
-          </strong>
-        </p>
+        <h3>
+          Description:
+        </h3>
+        <p>{{project.description}}</p>
+        <h3>
+          Related Skills:
+        </h3>
         <ul>
           {{#each project.skills}}
           <li>{{.}}</li>
