@@ -12,10 +12,12 @@
           <strong><h3>{{project.name}}</h3></strong>
         {{/if}}
         <div class="project-col1">
-          <div class="project-item">
-            <a {{bind-attr href=project.github}}><img src="/assets/GitHub.png" class="project-badge"/></a>
-            <a {{bind-attr href=project.github}}>GitHub Repo</a>
-          </div>
+          {{#if project.github}}
+            <div class="project-item">
+              <a {{bind-attr href=project.github}}><img src="/assets/GitHub.png" class="project-badge"/></a>
+              <a {{bind-attr href=project.github}}>GitHub Repo</a>
+            </div>
+          {{/if}}
           {{#if project.medium}}
           <div class="project-item">
             <a {{bind-attr href=project.medium}}><img src="/assets/medium-logo.png" class="project-badge"/></a>
@@ -46,7 +48,7 @@
         {{project.description}}
         <p>
           <strong>
-            Skills learned:
+            Related Skills:
           </strong>
         </p>
         <ul>

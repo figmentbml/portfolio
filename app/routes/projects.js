@@ -6,6 +6,51 @@ export default Ember.Route.extend({
     return [
       {
         id: "1",
+        name: "Integrated with Hackster.io",
+        description: "This project led me to add Hackster's part id to SparkFun's database for certain products.  Now popular projects made with a SparkFun part are highlighted on those product pages.  I also added functionality to our internal system to allow Catalog to push new products and update old ones to Hackster.io directly. Hackster.io users will not need to add those products themselves and can focus on inputing their projects.  This also allowed SparkFun to have more accurate information and product url on Hackster.io's website.",
+        url: "https://www.sparkfun.com/products/12060",
+        github: "",
+        skills: ["PHP", "PostgreSQL", "Created script to import ids to existing products", "API"],
+        image: "/assets/screen_shot_hackster.png",
+        medium: "",
+        climate: "",
+        climateBadge: "",
+        travisCI: "",
+        travisCIbadge: "",
+      },
+
+      {
+        id: "2",
+        name: "Pebble Hackathon - Exploreians",
+        description: "Exploreians is a game for your Pebble Time watch where you can interact and collect different companions depending on your terrian.  This app did not use your phone for GPS and instead used a prototype GPS SmartStrap with an Arduino Pro Mini and Flora GPS module.  We actually created 2 apps: one using Pebble.js and one in C.  This game is similiar to Pokemon Go! but we created this a few days before Pokemon Go! came out.",
+        url: "https://www.hackster.io/team-transplants/exploreians",
+        github: "https://github.com/figmentbml/pebbleHackTake2",
+        skills: ["WatchApp", "Pebble.js", "Hackathon"],
+        image: "/assets/pebblehack.png",
+        medium: "",
+        climate: "",
+        climateBadge: "",
+        travisCI: "",
+        travisCIbadge: "",
+      },
+/*
+      {
+        id: "3",
+        name: "CSC160: Homework",
+        description: "Things",
+        url: "",
+        github: "",
+        skills: ["C++"],
+        image: "",
+        medium: "",
+        climate: "",
+        climateBadge: "",
+        travisCI: "",
+        travisCIbadge: "",
+      },
+*/
+      {
+        id: "4",
         name: "Colorado Wine Tracker",
         description: "A Rails app that provides information about Colorado Wineries and their wine. It keeps track of your tasting notes so you can remember if you liked that wine and explore how a wine changes over time.",
         url: "http://www.wine-tracker.co/",
@@ -19,7 +64,7 @@ export default Ember.Route.extend({
         travisCIbadge: "https://travis-ci.org/figmentbml/wine-tracker.svg?branch=master",
       },
       {
-        id: "2",
+        id: "5",
         name: "Rantly",
         description: "An app with Ember.js and a Rails API, which was built from a list of stories for functionality and a mock site for design.  It requires users to make rants that are at least 144 characters long and has client/server user auth.",
         url: "http://jaswa-rantly.herokuapp.com/",
@@ -33,7 +78,7 @@ export default Ember.Route.extend({
         travisCIbadge: "",
       },
       {
-        id: "3",
+        id: "6",
         name: "gCamp",
         description: "A Rails app we built for class that is similar to Basecamp. It was our first full Rails app and helped us learn about development processes.",
         url: "http://stormy-cove-1200.herokuapp.com/",
@@ -47,7 +92,7 @@ export default Ember.Route.extend({
         travisCIbadge: "https://travis-ci.org/figmentbml/gCamp.svg?branch=master",
       },
       {
-        id: "4",
+        id: "7",
         name: "This Portfolio",
         description: "First Ember app containing more information about me, information about my projects, and my resume. It was also my first web app using Handlebars.js.",
         url: "http://beth-jaswa.herokuapp.com/",
@@ -61,7 +106,7 @@ export default Ember.Route.extend({
         travisCIbadge: "",
       },
       {
-        id: "5",
+        id: "8",
         name: "Ember Blog",
         description: "Basic blog with Ember front end powered by a Rails API. Features include posts, comments, and users.",
         url: "http://jaswa-blog.herokuapp.com/",
@@ -76,7 +121,7 @@ export default Ember.Route.extend({
       },
 
       {
-        id: "6",
+        id: "9",
         name: "Rails Blog API",
         description: "Rails API for a blog with posts, comments, and users returning different JSON depending on if it's hit from Ember or Angular.",
         url: "",
@@ -90,34 +135,6 @@ export default Ember.Route.extend({
         travisCIbadge: "",
       },
 
-      {
-        id: "7",
-        name: "Angular Blog",
-        description: "First Angular app that uses same Rails API as the Ember Blog",
-        url: "",
-        github: "https://github.com/figmentbml/blog-angular",
-        skills: ["AngularJS"],
-        image: "/assets/Screen Shot angular blog.png",
-        medium: "",
-        climate: "https://codeclimate.com/github/figmentbml/blog-angular",
-        climateBadge: "https://codeclimate.com/github/figmentbml/blog-angular/badges/gpa.svg",
-        travisCI: "",
-        travisCIbadge: "",
-      },
-      // {
-      //   id: "6",
-      //   name: "Listen",
-      //   description: "Simple Music Player",
-      //   url: "http://development.listen-beth-j.divshot.io/",
-      //   github: "https://github.com/figmentbml/listen",
-      //   skills: ["JavaScript click events", "jQuery", "HTML audio tags"],
-      //   image: "/assets/Screen Shot listen.png",
-      //   medium: "",
-      //   climate: "",
-      //   climateBadge: "",
-      //   travisCI: "",
-      //   travisCIbadge: "",
-      // },
       ];
   }
 
