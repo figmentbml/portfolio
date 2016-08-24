@@ -11,7 +11,7 @@ export default Ember.Route.extend({
         url: "https://www.sparkfun.com/search/results?term=lilypad",
         github: "",
         skills: ["PHP", "Javascript", "Swiftype API", "jQuery"],
-        image: "/assets/screen_shot_search.png",
+        image: "/assets/Screen_Shot_search.png",
         medium: "https://medium.com/@figmentbml/search-take-2-e826597c1221#.jdv5twly3",
         climate: "",
         climateBadge: "",
