@@ -6,11 +6,25 @@ export default Ember.Route.extend({
     return [
       {
         id: "1",
-        name: "Integrated with Hackster.io",
+        name: "Reimplemented Search",
+        description: "SparkFun wanted to improve their search results and user flow for searches.  The developers that implemented it originally were no longer there, so I was tasked to see if I could make it better.  I eliminated unintended searches from code which reduced overall cost of searches.  I also removed additional filtering from code which had caused result numbers to appear 'off'.  I worked with the UX team to implement a better user experience on the search results pages. I also improved reporting by recording users' search queries and click throughs to Swiftype.",
+        url: "https://www.sparkfun.com/search/results?term=lilypad",
+        github: "",
+        skills: ["PHP", "Javascript", "Swiftype API", "jQuery"],
+        image: "/assets/screen_shot_search.png",
+        medium: "https://medium.com/@figmentbml/search-take-2-e826597c1221#.jdv5twly3",
+        climate: "",
+        climateBadge: "",
+        travisCI: "",
+        travisCIbadge: "",
+      },
+      {
+        id: "2",
+        name: "Hackster.io Integration",
         description: "As part of the integration of Hackster.io with SparkFun's ecommerce platform, I built a data-sharing integration to add and update products from both sides.  Now SparkFun parts on Hackster.io are accurately linked to SparkFun product pages.  Also for a given SparkFun product, we query Hackster.io's database for projects using that product and display the most popular project on SparkFun's product page.  As part of this integration, users can also create a Hackster.io project from a SparkFun wishlist.",
         url: "https://www.sparkfun.com/products/12060",
         github: "",
-        skills: ["PHP", "PostgreSQL", "Created script to import ids to existing products", "Hackster.io API", "jQuery"],
+        skills: ["PHP", "PostgreSQL", "Import Script", "Hackster.io API", "jQuery"],
         image: "/assets/screen_shot_hackster.png",
         medium: "",
         climate: "",
@@ -18,11 +32,10 @@ export default Ember.Route.extend({
         travisCI: "",
         travisCIbadge: "",
       },
-
       {
-        id: "2",
+        id: "3",
         name: "Pebble Hackathon - Exploreians",
-        description: "During the Pebble Time Hackathon, I helped create a game for a Pebble Time watch where you can interact and collect different companions depending on your terrian called Exploreians.  This app did not use your phone for GPS and instead used a prototype GPS SmartStrap with an Arduino Pro Mini and Flora GPS module.  I initially used Pebble.js to build the game, but needed to switch over to C two-thirds into the hackathon so we could have color images and get the prototype SmartStrap to communicate to the game.  This game is similiar to Pokemon Go! but we created this a few days before Pokemon Go! was announced.",
+        description: "During the Pebble Time Hackathon in 2015, I helped create a game for a Pebble Time watch where you can interact and collect different companions depending on your terrian called Exploreians.  This app did not use your phone for GPS and instead used a prototype GPS SmartStrap with an Arduino Pro Mini and Flora GPS module.  I initially used Pebble.js to build the game, but needed to switch over to C two-thirds into the hackathon so we could have color images and get the prototype SmartStrap to communicate to the game.  This game is similiar to Pokemon Go! but we created this a few days before Pokemon Go! was announced.  We won 'Most Entertaining' at the awards.",
         url: "https://www.hackster.io/team-transplants/exploreians",
         github: "https://github.com/figmentbml/pebblehack",
         skills: ["WatchApp", "Pebble.js", "Hackathon"],
@@ -33,29 +46,13 @@ export default Ember.Route.extend({
         travisCI: "",
         travisCIbadge: "",
       },
-/*
-      {
-        id: "3",
-        name: "CSC160: Homework",
-        description: "Things",
-        url: "",
-        github: "",
-        skills: ["C++"],
-        image: "",
-        medium: "",
-        climate: "",
-        climateBadge: "",
-        travisCI: "",
-        travisCIbadge: "",
-      },
-*/
       {
         id: "4",
         name: "Colorado Wine Tracker",
         description: "A Rails app that provides information about Colorado Wineries and their wine. It keeps track of your tasting notes so you can remember if you liked that wine and explore how a wine changes over time.",
         url: "http://www.wine-tracker.co/",
         github: "https://github.com/figmentbml/wine-tracker",
-        skills: ["Ruby on Rails", "Gems: Yelp API, Carrierwave, Fog, Nokogiri", "PostgreSQL", "Rake Tasks", "Scraping Sites", "Forms", "User Authorization", "Bootstrap", "Associations", "Controller Specs"],
+        skills: ["Ruby on Rails", "Gems: Yelp API, Carrierwave, Fog, Nokogiri", "PostgreSQL", "Rake Tasks", "Scraping Sites", "User Authorization", "Bootstrap", "Controller Specs"],
         image: "/assets/Screen Shot wine tracker.png",
         medium: "http://medium.com/gschool-chronicles/introducing-colorado-wine-tracker-a2006ad18171",
         climate: "https://codeclimate.com/github/figmentbml/wine-tracker",
@@ -69,7 +66,7 @@ export default Ember.Route.extend({
         description: "An app with Ember.js and a Rails API, which was built from a list of stories for functionality and a mock site for design.  It requires users to make rants that are at least 144 characters long and has client/server user auth.",
         url: "",
         github: "https://github.com/figmentbml/rantly-ember",
-        skills: ["Ember.js", "Client/Server User Auth", "Rails API", "Client/Server Validations", "Gravatar API", "Inline Editing", "Search Rants", "Associations", "PostgreSQL"],
+        skills: ["Ember.js", "Client/Server User Auth", "Rails API", "Client/Server Validations", "Gravatar API", "Inline Editing", "Search", "PostgreSQL"],
         image: "/assets/Screen Shot rantly.png",
         medium: "",
         climate: "https://codeclimate.com/github/figmentbml/ember-rantly",
@@ -83,7 +80,7 @@ export default Ember.Route.extend({
         description: "A Rails app we built for class that is similar to Basecamp. It was our first full Rails app and helped us learn about development processes.",
         url: "http://stormy-cove-1200.herokuapp.com/",
         github: "https://github.com/figmentbml/gCamp",
-        skills: ["Ruby on Rails", "Join Tables", "User Authorization", "Bootstrap", "Associations", "Rspec", "Capybara", "PostgreSQL"],
+        skills: ["Ruby on Rails", "User Authorization", "Bootstrap", "Rspec", "Capybara", "PostgreSQL"],
         image: "/assets/Screen Shot gcamp.png",
         medium: "",
         climate: "https://codeclimate.com/github/figmentbml/gCamp",
@@ -94,7 +91,7 @@ export default Ember.Route.extend({
       {
         id: "7",
         name: "This Portfolio",
-        description: "First Ember app containing more information about me, information about my projects, and my resume. It was also my first web app using Handlebars.js.",
+        description: "First Ember app containing more information about me, information about my projects, and my resume.",
         url: "http://beth-jaswa.herokuapp.com/",
         github: "https://github.com/figmentbml/portfolio",
         skills: ["Ember.js", "Handlebars.js", "all custom CSS & HTML"],
@@ -108,10 +105,10 @@ export default Ember.Route.extend({
       {
         id: "8",
         name: "Ember Blog",
-        description: "Basic blog with Ember front end powered by a Rails API. Features include posts, comments, and users.",
+        description: "Extremely basic blog with Ember front end powered by a Rails API. Features include posts, comments, and users.",
         url: "http://jaswa-blog.herokuapp.com/",
         github: "https://github.com/figmentbml/blog-client",
-        skills: ["Ember.js", "Handlebars.js", "Rails API", "Ember Associations", "Collection Select", "Search Posts", "Flash Messages", "all custom CSS & HTML"],
+        skills: ["Ember.js", "Handlebars.js", "Rails API", "Ember Associations", "Collection Select", "Search Posts", "Flash Messages"],
         image: "/assets/Screen Shot blog.png",
         medium: "https://medium.com/gschool-chronicles/search-bar-madness-27f98e1d0654",
         climate: "https://codeclimate.com/github/figmentbml/blog-client",
@@ -119,7 +116,6 @@ export default Ember.Route.extend({
         travisCI: "",
         travisCIbadge: "",
       },
-
       {
         id: "9",
         name: "Rails Blog API",
@@ -135,7 +131,7 @@ export default Ember.Route.extend({
         travisCIbadge: "",
       },
 
-      ];
+    ];
   }
 
 });
