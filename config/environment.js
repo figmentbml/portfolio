@@ -4,23 +4,29 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'portfolio',
     environment: environment,
-    baseURL: '/',
+    rootURL: '/',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
         // e.g. 'with-controller': true
+      },
+      EXTEND_PROTOTYPES: {
+        // Prevent Ember Data from overriding Date.parse.
+        Date: false
       }
     },
 
+    contentSecurityPolicyHeader: 'Content-Security-Policy-Report-Only',
+
     contentSecurityPolicy: {
-      'default-src': "'none'",
-      'script-src': "'self' https://cdn.mxpnl.com", // Allow scripts from https://cdn.mxpnl.com
-      'font-src': "'self' http://fonts.gstatic.com http://maxcdn.bootstrapcdn.com/",  // Allow fonts to be loaded from http://fonts.gstatic.com
-      'connect-src': "'self' http://localhost:3000",
-      'img-src': "'self' https://codeclimate.com/github/figmentbml/ https://travis-ci.org/",
-      'style-src': "'self' 'unsafe-inline'", // Allow inline styles and loaded CSS from http://fonts.googleapis.com
-      'media-src': "'self'"
+      'default-src': ["'none'"],
+      'script-src': ["'self'"], // Allow scripts from https://cdn.mxpnl.com
+      'font-src': ["'self'", "http://fonts.gstatic.com", "http://maxcdn.bootstrapcdn.com/"],  // Allow fonts to be loaded from http://fonts.gstatic.com
+      'connect-src': ["'self'"],
+      'img-src': ["'self'", "https://codeclimate.com/github/figmentbml/", "https://travis-ci.org/"],
+      'style-src': ["'self'", "'unsafe-inline'"], // Allow inline styles and loaded CSS from http://fonts.googleapis.com
+      'media-src': ["'self'"],
     },
 
     APP: {
@@ -39,7 +45,6 @@ module.exports = function(environment) {
 
   if (environment === 'test') {
     // Testem prefers this...
-    ENV.baseURL = '/';
     ENV.locationType = 'none';
 
     // keep test console output quieter
